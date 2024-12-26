@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#dark-mode-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;  
+    border: none; 
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color:#3e8ab6; 
+    background-color: transparent;
+}
+
+main {
+  background-color: rgb(221, 217, 224);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 80%;
+}
+
+h1 {
+  text-align: center;
+  color: #3e8ab6;
+  margin-bottom: 1rem;
+}
+
+#todo-form {
+  display: flex;
+}
+
+#task-title-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #d38dc188;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 1rem;
+}
+
+#add-task-button {
+  color: #ff6b81;
+  background-color: transparent;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+#add-task-button:hover {
+  color: #ff4757;
+}
+
+#todo-list li {
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: #3e8ab6;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.fa-heart {
+  color: #ff6b81;
+}
+
+.remove-button {
+  color: #2793b4;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  background-color: transparent;
+}
+
+.remove-button:hover {
+  color: #00e961;
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+  .dark-mode main {
+    background-color: rgb(30, 30, 30);
+  }
+  
+  .dark-mode #todo-list li {
+    color: #fff;
+  }
+
+  .dark-mode  #task-title-input {
+    background-color: rgb(30, 30, 30);
+  }
+
+  
